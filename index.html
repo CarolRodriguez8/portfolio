@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carolina Rodríguez - Portfolio DAM</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<canvas id="network-bg"></canvas>
+
+<!-- Navbar -->
+<header>
+<nav>
+    <div class="logo">Carolina Rodríguez</div>
+    <ul>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#timeline">Aprendizaje</a></li>
+        <li><a href="#contact">Contacto</a></li>
+    </ul>
+</nav>
+
+<div class="hero">
+    <h1>Hola, soy Carolina Rodríguez</h1>
+    <p>Estudiante de Desarrollo de Aplicaciones Multiplataforma | Java, SQL, Android, Git</p>
+    <a href="#projects" class="btn">Ver mis proyectos</a>
+</div>
+</header>
+
+<!-- Sobre mí -->
+<section id="about" class="fade-in">
+<h2>Sobre mí</h2>
+<p>Soy estudiante de <strong>DAM</strong>, con conocimientos en <strong>Java, SQL, Android Studio, HTML/CSS y Git</strong>. Me apasiona la programación y el desarrollo de aplicaciones. Busco prácticas para aplicar mis conocimientos del primer curso y seguir creciendo profesionalmente.</p>
+</section>
+
+<!-- Habilidades -->
+<section id="skills" class="fade-in">
+<h2>Habilidades</h2>
+<div class="skills-container">
+    <div class="skill">Java</div>
+    <div class="skill">SQL / Bases de datos</div>
+    <div class="skill">Android Studio</div>
+    <div class="skill">HTML & CSS</div>
+    <div class="skill">JavaScript básico</div>
+    <div class="skill">Git & GitHub</div>
+    <div class="skill">Ficheros y persistencia</div>
+    <div class="skill">Programación orientada a objetos</div>
+</div>
+</section>
+
+<!-- Proyectos -->
+<section id="projects" class="fade-in">
+<h2>Proyectos</h2>
+<div class="projects-container">
+
+<div class="project-card">
+    <h3>Gestor de Tareas (Java + SQL)</h3>
+    <p>Aplicación de escritorio en Java que permite crear, actualizar y eliminar tareas con persistencia en base de datos SQL.</p>
+    <a href="#" target="_blank">Ver código</a>
+</div>
+
+<div class="project-card">
+    <h3>Agenda de Contactos (Java + Ficheros)</h3>
+    <p>Programa en Java que guarda contactos en ficheros de registro, con búsqueda y edición de datos.</p>
+    <a href="#" target="_blank">Ver código</a>
+</div>
+
+<div class="project-card">
+    <h3>App Android de Notas</h3>
+    <p>Aplicación Android básica para tomar notas, con almacenamiento local y diseño intuitivo.</p>
+    <a href="#" target="_blank">Ver código</a>
+</div>
+
+<div class="project-card">
+    <h3>Portfolio Web Personal</h3>
+    <p>Portfolio web responsivo desarrollado en HTML, CSS y JavaScript, mostrando mis proyectos y habilidades.</p>
+    <a href="#" target="_blank">Ver código</a>
+</div>
+
+</div>
+</section>
+
+<!-- Timeline -->
+<section id="timeline" class="fade-in">
+<h2>Mi Aprendizaje en DAM</h2>
+<div class="timeline">
+
+<div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <h3>Java Básico</h3>
+        <p>Aprendí variables, estructuras de control, arrays, bucles y fundamentos de programación orientada a objetos.</p>
+    </div>
+</div>
+
+<div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <h3>SQL y Bases de Datos</h3>
+        <p>Creación de tablas, consultas, inserciones y relaciones entre tablas para aplicaciones Java.</p>
+    </div>
+</div>
+
+<div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <h3>Android Studio Básico</h3>
+        <p>Desarrollo de apps simples con actividades, layouts, almacenamiento local y diseño responsivo.</p>
+    </div>
+</div>
+
+<div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <h3>HTML, CSS y JavaScript</h3>
+        <p>Construcción de páginas web estáticas, diseño moderno, estilos responsive y animaciones básicas.</p>
+    </div>
+</div>
+
+<div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <h3>Ficheros y Persistencia</h3>
+        <p>Manejo de ficheros planos y de registro para guardar información de forma persistente en Java.</p>
+    </div>
+</div>
+
+</div>
+</section>
+
+<!-- Contacto -->
+<section id="contact" class="fade-in">
+<h2>Contacto</h2>
+<p>Puedes contactarme a través de:</p>
+<ul>
+<li>Email: <a href="mailto:carolinapozosc@gmail.com">carolinapozosc@gmail.com</a></li>
+<li>LinkedIn: <a href="https://www.linkedin.com/in/CarolRodriguez8" target="_blank">Carolina Rodríguez</a></li>
+<li>GitHub: <a href="https://github.com/CarolRodriguez8" target="_blank">CarolRodriguez8</a></li>
+</ul>
+</section>
+
+<footer>
+<p>&copy; 2025 Carolina Rodríguez | Portfolio DAM</p>
+</footer>
+
+<!-- Script de fondo de nodos ajustado -->
+<script>
+const canvas = document.getElementById('network-bg');
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let nodes = [];
+const NODE_COUNT = 50; // menos nodos para fondo más sutil
+for(let i=0;i<NODE_COUNT;i++){
+    nodes.push({
+        x: Math.random()*canvas.width,
+        y: Math.random()*canvas.height,
+        vx: (Math.random()-0.5)*0.3,
+        vy: (Math.random()-0.5)*0.3
+    });
+}
+
+let mouse = {x: null, y: null};
+window.addEventListener('mousemove', e => {mouse.x = e.x; mouse.y = e.y;});
+window.addEventListener('mouseout', e => {mouse.x = null; mouse.y = null;});
+
+function drawNetwork(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    nodes.forEach(node=>{
+        ctx.beginPath();
+        ctx.arc(node.x,node.y,1.5,0,Math.PI*2);
+        ctx.fillStyle="#3b82f6";
+        ctx.fill();
+    });
+    for(let i=0;i<NODE_COUNT;i++){
+        for(let j=i+1;j<NODE_COUNT;j++){
+            const dx=nodes[i].x-nodes[j].x;
+            const dy=nodes[i].y-nodes[j].y;
+            const dist=Math.sqrt(dx*dx+dy*dy);
+            if(dist<100){
+                ctx.strokeStyle="rgba(59,130,246,"+(1-dist/100)+")";
+                ctx.lineWidth=1;
+                ctx.beginPath();
+                ctx.moveTo(nodes[i].x,node[i].y);
+                ctx.lineTo(nodes[j].x,nodes[j].y);
+                ctx.stroke();
+            }
+        }
+        if(mouse.x && mouse.y){
+            const dxm = nodes[i].x - mouse.x;
+            const dym = nodes[i].y - mouse.y;
+            const distm = Math.sqrt(dxm*dxm + dym*dym);
+            if(distm<120){
+                ctx.strokeStyle="rgba(59,130,246,"+(1-distm/120)+")";
+                ctx.beginPath();
+                ctx.moveTo(nodes[i].x,nodes[i].y);
+                ctx.lineTo(mouse.x, mouse.y);
+                ctx.stroke();
+            }
+        }
+    }
+    nodes.forEach(node=>{
+        node.x+=node.vx;
+        node.y+=node.vy;
+        if(node.x<0||node.x>canvas.width) node.vx*=-1;
+        if(node.y<0||node.y>canvas.height) node.vy*=-1;
+    });
+    requestAnimationFrame(drawNetwork);
+}
+drawNetwork();
+window.addEventListener('resize', ()=>{
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+});
+
+// Fade-in scroll
+const faders = document.querySelectorAll('.fade-in');
+const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
+const appearOnScroll = new IntersectionObserver(function(entries, observer){
+    entries.forEach(entry => {
+        if(!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+    });
+}, appearOptions);
+faders.forEach(fader => appearOnScroll.observe(fader));
+
+// Timeline fade-in
+const timelineItems = document.querySelectorAll('.timeline-item');
+timelineItems.forEach(item => appearOnScroll.observe(item));
+</script>
+
+</body>
+</html>
