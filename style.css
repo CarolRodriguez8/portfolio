@@ -358,3 +358,31 @@ footer {
     box-shadow: none;
   }
 }
+/* =====================
+   CONTACT ALIGNMENT FIX
+===================== */
+#contact {
+  text-align: center;
+}
+
+#contact p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+#contact ul {
+  align-items: center;
+}
+
+#contact ul li {
+  background: rgba(17, 17, 17, 0.8);
+  padding: 12px 20px;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+#contact ul li a {
+  display: inline-block;
+  margin-left: 5px;
+}
+
