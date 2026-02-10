@@ -1,4 +1,4 @@
-# carolrodriguez8.github.io
+# carolpr8.github.io
 # Portfolio de Carolina Rodríguez - DAM
 
 ¡Hola! 👋 Soy **Carolina Rodríguez**, estudiante de **Desarrollo de Aplicaciones Multiplataforma (DAM)**.  
