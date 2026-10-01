@@ -2,7 +2,7 @@
 
 Bienvenido a mi portfolio de GitHub.
 
-Soy desarrolladora de software especializada en **Desarrollo de Aplicaciones Multiplataforma**, con experiencia en el desarrollo de aplicaciones de escritorio, aplicaciones web y proyectos Android. En este repositorio recopilo los proyectos que reflejan mi evolución técnica, mi forma de trabajar y las tecnologías con las que desarrollo soluciones.
+En pronceso de desarrolladora de software cursando **Desarrollo de Aplicaciones Multiplataforma**, con experiencia en el desarrollo de aplicaciones de escritorio, aplicaciones web y proyectos Android. En este repositorio recopilo los proyectos que reflejan mi evolución técnica, mi forma de trabajar y las tecnologías con las que desarrollo soluciones.
 
 Mi objetivo es incorporarme al sector del desarrollo de software, aportando una combinación de capacidad técnica, experiencia profesional previa y una sólida actitud de aprendizaje continuo.
 
